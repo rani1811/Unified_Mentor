@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222;
+}
+
+.card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #fe9a8b, #ffcc70); /* Gradient for card */
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Ensure the remove icon is positioned correctly */
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 25px;
+}
+
+.remove-icon {
+  position: absolute;
+  right: 80px;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  /* display: none;  */
+}
+.remove-icon:hover {
+  color: #f44336; /* Hover effect for the remove icon */
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}
+
+#toggleTemp {
+  margin-top: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #fe9a8b, #ffcc70);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#toggleTemp:hover {
+  background: linear-gradient(135deg, #ffcc70, #fe9a8b);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
+}
+
+#toggleTemp:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.city {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+  text-transform: capitalize; /* Capitalizes the first letter of each word */
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin-top: 8px;
+  text-align: center;
+  font-style: italic; /* Optional: Adds italic styling for a softer look */
+}
