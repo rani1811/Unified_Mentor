@@ -1,0 +1,257 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute; /* Allows it to stay at the top but scroll with the page */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers it horizontally */
+    width: 90%; /* Adjust width */
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Rounded edges */
+    padding: 10px 20px; /* Inner spacing */
+    z-index: 1000; /* Keep it above other elements */
+}
+
+
+.custom-navbar {
+    background: transparent; /* No background */
+    border-radius: 20px; /* Rounded edges */
+    margin:8px auto; /* Centering */
+    width: 90%; /* Adjust width */
+    padding: 10px 20px; /* Inner padding */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+
+.nav-links .nav-link {
+    font-weight: bold;
+    color: white !important; /* Make text visible */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.nav-links .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2); /* Light hover effect */
+}
+
+#bio-text {
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 20px auto 15px; /* Added '20px' top margin to move it down */
+    opacity: 0.9;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Light transparent background */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #003366, #7b4397, #dc2430);
+    padding: 200px 20px; /* Increased padding to make it taller */
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    min-height: 500px; /* Set a minimum height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn-resume {
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-resume:hover {
+    background-color: #e60000;
+}
+
+
+
+/*work section */
+.experience-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.experience-content h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.experience-content p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Projects Section */
+.posts {
+    margin-top: 40px;
+}
+
+.post-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Featured Project Card */
+.project-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.project-details h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Skills and Contact Section */
+.skills, .contact {
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+/* Post Card Styling */
+.post-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    max-width: 350px; /* Adjust card width */
+    margin: auto; /* Centering */
+}
+
+/* Image Styling */
+.project-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Headings */
+.post-card h5 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Description */
+.post-card p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* GitHub Button */
+.btn-github {
+    display: inline-block;
+    background-color: #24292e; /* GitHub dark color */
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn-github:hover {
+    background-color: #333;
+}
